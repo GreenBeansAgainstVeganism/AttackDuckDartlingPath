@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net4.8</TargetFramework>
+        <RootNamespace>AttackDuckDartlingPath</RootNamespace>
+        <Configurations>Debug;Release</Configurations>
+        <Nullable>enable</Nullable>
+        <AssemblyName>AttackDuckDartlingPath</AssemblyName>
+        <LangVersion>latest</LangVersion>
+        <Optimize>False</Optimize>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+    <ItemGroup>
+        <Content Include=".github\workflows\build.yml" />
+    </ItemGroup>
+  
+    <Import Project="..\btd6.targets" />
+  <ItemGroup>
+    <Reference Include="PathsPlusPlus">
+      <HintPath>$(BloonsTD6)\Mods\PathsPlusPlus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
